@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<title>Login | BenzoMaster.ru</title>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="css/tooplate-style.css">
+<link rel="icon" href="images/favicon.png">
+
+<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    .bg-video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      background-color: black;
+    }
+  
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background: rgb(31, 31, 31);
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #252525;
+      box-sizing: border-box;
+      background-color: #373737;
+    }
+  
+    .section-btn{
+      color: white;
+      padding: 10px 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 1;
+    }
+  
+    .form-control {
+      opacity: 0.9;
+    }
+  
+    .error {
+        padding: 15px;
+      color: red;
+      display: none;
+    }
+  </style>
+  </head>
+<body>
+
+<!-- PRE LOADER -->
+<div class="preloader">
+     <div class="spinner">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+
+
+
+
+
+<!-- HOME -->
+<section id="home" class="parallax-section">
+  <div class="overlay"></div>
+  <div class="container">
+  </div>
+
+  <!-- Video -->
+  <video controls="" autoplay="" loop="" muted>
+       <source src="videos/videol.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+  </video>
+</section>
+
+
+
+<div class="container">
+  <!-- Начало формы -->
+  <form action="authenticate.php" method="post">
+      <div class="collapse navbar-collapse">
+          <ul class="nav navbar-btn">
+              <li><a style="text-align: center;" href="index.html">Назад</a></li>
+          </ul>
+      </div>
+      <div class="logo-container" style="text-align: center; padding-top: 50px; padding-bottom: 10px;">
+          <a>
+              <img src="images/loginLogo.png" alt="Лого" style="width: 100px; height: 100px;">
+          </a>
+      </div>
+      <label style="text-align: center; color: white; padding-bottom: 25px; font-size: 25px; -webkit-text-stroke: 0.5px black;">Авторизация в систему</label>
+      <label for="login">Логин:</label>
+      <input type="text" id="login" name="login" required>
+    
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required maxlength="15">
+    
+      <div class="row">
+          <ul class="section-btn">
+              <!-- Кнопка для отправки формы -->
+              <button type="submit" class="form-control" id="submitBtn" name="submitBtn"><span data-hover="Войти">Войти</span></button>
+          </ul>
+          <div class="error" id="error-msg">Неверный пароль. Повторите попытку через <span id="timer">5</span> секунд.</div>
+      </div>
+  </form>
+  <!-- Конец формы -->
+</div>
+
+
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/magnific-popup-options.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

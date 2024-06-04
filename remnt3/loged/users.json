@@ -1,0 +1,12 @@
+[
+    {
+        "login": "root",
+        "password": "rootPassword",
+        "role": "root"
+    },
+    {
+        "login": "operator",
+        "password": "newPassword",
+        "role": "operator"
+    }
+]
